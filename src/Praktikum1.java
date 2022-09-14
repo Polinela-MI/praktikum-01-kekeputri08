@@ -9,13 +9,13 @@ public class Praktikum1 {
         System.out.print(args[0]+ " " +args[1]+ " " +args[2]+ " = ");
 
         switch(operator) {
-            case ('0'):
+            case ('1'):
                 System.out.println(bil1 + bil2);
                 break;
-            case ('1'):
+            case ('2'):
                 System.out.println(bil1 - bil2);
                 break;
-            case ('2'):
+            case ('3'):
                 System.out.println(bil1 * bil2);
                 break;
             default:
