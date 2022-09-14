@@ -20,3 +20,10 @@ public class Main {
         System.out.println("_______________________________");
         System.out.print("Masukkan pilihan [1/2/3/4/5]: ");
         pilih_operasi = input_pilihan.next();
+        if (pilih_operasi.equals("1")) {
+            System.out.println("Masukkan Nilai A: ");
+            nilai_a = input_pilihan.nextInt();
+            System.out.println("Masukkan Nilai B: ");
+            nilai_b = input_pilihan.nextInt();
+
+            hasil = nilai_a + nilai_b;
