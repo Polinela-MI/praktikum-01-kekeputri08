@@ -12,6 +12,22 @@ import java.text.DecimalFormatSymbols;
 
                 int Trans, Kerja, Total, belum_pajak, sudah_pajak;
 
+                Trans = (int)(Gajipokok * 0.05);
+                Kerja = (int)(Gajipokok * 0.1);
+
+                belum_pajak = Gajipokok + Kerja + Trans;
+                sudah_pajak = (int) (belum_pajak * 0.025);
+                Total = belum_pajak - sudah_pajak;
+
+                DecimalFormat kursIndonesia = (DecimalFormat) DecimalFormat.getCurrencyInstance();
+                DecimalFormatSymbols formatRp = new DecimalFormatSymbols();
+
+                formatRp.setCurrencySymbol("Rp. ");
+                formatRp.setMonetaryDecimalSeparator(',');
+                formatRp.setGroupingSeparator('.');
+                kursIndonesia.setDecimalFormatSymbols(formatRp);
+
+                System.out.println(NIK + " - " + Nama + " - " + "Rp" + Total);
 
             }
         }
