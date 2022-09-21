@@ -2,23 +2,25 @@ public class Praktikum1 {
 
     public static void main(String[] args) {
 
-        char operator = args[0].charAt(0);
-        int bil1 = Integer.parseInt(args[1]);
-        int bil2 = Integer.parseInt(args[2]);
+        for (int i = 1; i < args.length; i += 3) {
+            int operator = Integer.parseInt(args[i]);
+            int operan1 = Integer.parseInt(args[i + 1]);
+            int operan2 = Integer.parseInt(args[i + 2]);
 
-        System.out.print(args[0]+ " " +args[1]+ " " +args[2]+ " = ");
 
-        switch(operator) {
-            case ('1'):
-                System.out.println(bil1 + bil2);
-                break;
-            case ('2'):
-                System.out.println(bil1 - bil2);
-                break;
-            case ('3'):
-                System.out.println(bil1 * bil2);
-                break;
-            default:
+            switch (operator) {
+                case (1):
+                    System.out.println(operan1 + operan2);
+                    break;
+                case (2):
+                    System.out.println(operan1 - operan2);
+                    break;
+                case (3):
+                    System.out.println(operan1 * operan2);
+                    break;
+                default:
+
+            }
         }
     }
 }
