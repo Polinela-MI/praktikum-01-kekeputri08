@@ -4,9 +4,10 @@ public class Praktikum3 {
     int nik;
     String nama;
     int gapok;
+    int kehadiran;
 
     //overloading constructor
-    public Praktikum3(int nik, String nama, int gapok){
+    public Praktikum3(int nik, String nama, int gapok, int kehadiran){
         this.nik=nik;
         this.nama=nama;
         this.gapok=gapok;
