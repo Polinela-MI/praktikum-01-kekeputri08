@@ -1,46 +1,34 @@
 package modul3;
 
 public class Praktikum3 {
-    int nik;
-    String nama;
-    int gapok;
-    int hadir;
+    private int nik;
+    private String nama;
+    private int gapok;
+    private int hadir;
 
     //overloading constructor
     public Praktikum3(int nik, String nama, int gapok, int hadir){
-        this.nik=nik;
-        this.nama=nama;
-        this.gapok=gapok;
+        this.nik = nik;
+        this.nama = nama;
+        this.gapok = gapok;
+    }
+    public int getNik() {return nik; }
+    public String getNamaKaryawan() {return nama;}
+    public int getGapok(){
+        return gapok;
     }
 
-    public int hitungGaji(){
+    public void hitungGaji(){
 
         int Trans = (int)(gapok * 0.05);
         int Kerja = (int)(gapok * 0.1);
+        int makan = (int)(35000 * 20);
 
         int Sebelum_Pajak = gapok + Kerja + Trans;
         int Sesudah_Pajak = (int) (Sebelum_Pajak * 0.025);
         int Total = Sebelum_Pajak - Sesudah_Pajak;
         return Total;
+        System.out.println(total + " Rp. ")
     }
 }
 
-public class main{
-    public static void main(String[] args){
-        ArrayList<Integer> nikList = new ArrayList<Integer>();
-
-        for(int i=1; i<args.length; i+=3){
-            int nik =args[i];
-            String nama = args[i+1];
-            int gaji =args[i+2];
-
-            if(nikList.contains(nik)){
-                Praktikum3 p = new Praktikum3(nik, nama, gaji, hadir);
-                nikList.add(nik);
-                System.out.println()
-
-            }
-
-        }
-    }
-}
