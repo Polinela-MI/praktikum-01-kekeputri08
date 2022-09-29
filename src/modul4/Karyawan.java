@@ -6,6 +6,9 @@ class Karyawan {
     private int gajiPokok;
 
     Karyawan(int nik, String nama, int gajiPokok) {
+        this.nik = nik;
+        this.nama = nama;
+        this.gajiPokok = gajiPokok;
     }
     //sett
     public void setnik(int nik){
