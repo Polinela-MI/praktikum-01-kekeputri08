@@ -29,15 +29,48 @@ class Karyawan {
     }
 
 }
+
+
 class ParuhWaktu{
     int jamKerja = 20;
+
+    ParuhWaktu(int jamKerja){
+    }
+
+    public void setjamKerja(int jamKerja){
+        this.jamKerja = jamKerja;
+    }
+
+    public int getjamKerja() {
+        return jamKerja;
+
 }
 
 class PenuhWaktu{
     int jamKerja = 40;
+
+    PenuhWaktu(int jamKerja){
+    }
+
+    public void setjamKerja(int jamKerja){
+        this.jamKerja = jamKerja;
+    }
+
+    public int getjamKerja() {
+        return jamKerja;
 }
 
 class Manajer{
     int Kinerja = ;
+
+    Manajer(int kinerja){
+    }
+
+    public void Kinerja(int Kinerja){
+        this.Kinerja = Kinerja;
+    }
+
+    public int getkinerja() {
+        return Kinerja;
 }
 
