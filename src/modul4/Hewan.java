@@ -1,4 +1,4 @@
-package modul3;
+package modul4;
 
 class Hewan{
     int jumlahKaki;
