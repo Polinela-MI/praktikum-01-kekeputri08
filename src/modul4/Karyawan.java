@@ -31,10 +31,10 @@ class Karyawan {
 }
 
 
-class ParuhWaktu{
+class KaryawanParuhWaktu extends Karyawan{
     int jamKerja = 20;
 
-    ParuhWaktu(int jamKerja){
+    KaryawanParuhWaktu(int jamKerja){
     }
 
     public void setjamKerja(int jamKerja){
@@ -46,10 +46,10 @@ class ParuhWaktu{
 
 }
 
-class PenuhWaktu{
+class KaryawanPenuhWaktu extends Karyawan{
     int jamKerja = 40;
 
-    PenuhWaktu(int jamKerja){
+    KaryawanPenuhWaktu(int jamKerja){
     }
 
     public void setjamKerja(int jamKerja){
@@ -60,7 +60,7 @@ class PenuhWaktu{
         return jamKerja;
 }
 
-class Manajer{
+class Manajer extends Karyawan{
     int Kinerja = ;
 
     Manajer(int kinerja){
@@ -70,7 +70,7 @@ class Manajer{
         this.Kinerja = Kinerja;
     }
 
-    public int getkinerja() {
+    public int getKinerja() {
         return Kinerja;
 }
 
