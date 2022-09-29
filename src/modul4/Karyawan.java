@@ -1,18 +1,34 @@
 package modul4;
 
-public class Karyawan {
+class Karyawan {
     private int nik;
     private String nama;
     private int gajiPokok;
 
-    Karyawan(int nik, String nama, int gajiPokok){
-        this.nik = nik;
-        this.nama = nama;
-        this.gajiPokok = gajiPokok;
-        System.out.println("Kelas Karyawan");
+    Karyawan(int nik, String nama, int gajiPokok) {
     }
-}
+    //set
+    public void setnik(int nik){
+        this.nik = nik;
+    }
+    public void setnama (String nama){
+        this.nama = nama;
+    }
+    public void setgajiPokok(int gajiPokok){
+        this.gajiPokok = gajiPokok;
+    }
 
+    public int getnik() {
+        return nik;
+    }
+    public String getnama() {
+        return nama;
+    }
+    public int getgajiPokok() {
+        return gajiPokok;
+    }
+
+}
 class ParuhWaktu{
     int jamKerja = 20;
 }
