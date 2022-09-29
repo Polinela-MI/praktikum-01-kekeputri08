@@ -7,7 +7,7 @@ class Karyawan {
 
     Karyawan(int nik, String nama, int gajiPokok) {
     }
-    //set
+    //sett
     public void setnik(int nik){
         this.nik = nik;
     }
@@ -18,6 +18,7 @@ class Karyawan {
         this.gajiPokok = gajiPokok;
     }
 
+    //gett
     public int getnik() {
         return nik;
     }
@@ -31,46 +32,10 @@ class Karyawan {
 }
 
 
-class KaryawanParuhWaktu extends Karyawan{
-    int jamKerja = 20;
 
-    KaryawanParuhWaktu(int jamKerja){
-    }
 
-    public void setjamKerja(int jamKerja){
-        this.jamKerja = jamKerja;
-    }
 
-    public int getjamKerja() {
-        return jamKerja;
 
-}
 
-class KaryawanPenuhWaktu extends Karyawan{
-    int jamKerja = 40;
 
-    KaryawanPenuhWaktu(int jamKerja){
-    }
-
-    public void setjamKerja(int jamKerja){
-        this.jamKerja = jamKerja;
-    }
-
-    public int getjamKerja() {
-        return jamKerja;
-}
-
-class Manajer extends Karyawan{
-    int Kinerja = ;
-
-    Manajer(int kinerja){
-    }
-
-    public void Kinerja(int Kinerja){
-        this.Kinerja = Kinerja;
-    }
-
-    public int getKinerja() {
-        return Kinerja;
-}
 
