@@ -1,4 +1,4 @@
-package Modul1;
+package modul2;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 

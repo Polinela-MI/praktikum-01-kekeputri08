@@ -22,13 +22,14 @@ public class Praktikum3 {
 
         int Trans = (int)(gapok * 0.05);
         int Kerja = (int)(gapok * 0.1);
-        int makan = (int)(35000 * 20);
+        int Makan = (int)(35000 * hadir);
 
+        int subTotal = gapok + Trans + Kerja + Makan;
         int Sebelum_Pajak = gapok + Kerja + Trans;
         int Sesudah_Pajak = (int) (Sebelum_Pajak * 0.025);
         int Total = Sebelum_Pajak - Sesudah_Pajak;
-        return Total;
-        System.out.println(total + " Rp. ")
+
+        System.out.println("Rp." + Total);
     }
 }
 
