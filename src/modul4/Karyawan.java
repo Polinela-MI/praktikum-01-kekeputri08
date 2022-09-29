@@ -5,6 +5,14 @@ class Karyawan {
     private String nama;
     private int gajiPokok;
 
+    public void hitungGaji(){
+        int tunjanganTransport = (int) 0.05 * gajiPokok;
+        int subTotalGaji = gajiPokok + tunjanganTransport;
+        int pajak = subTotalGaji * (int)0.025;
+        int TotalGajiMinggu = subTotalGaji - pajak;
+    }
+
+
     Karyawan(int nik, String nama, int gajiPokok) {
         this.nik = nik;
         this.nama = nama;
