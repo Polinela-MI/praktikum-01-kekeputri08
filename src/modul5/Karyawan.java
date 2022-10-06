@@ -11,15 +11,15 @@ public class Karyawan {
 
     public double hitungGaji(){
         tunjanganTransportasi =  0.05 * gajiPokok;
-         misc= gajiPokok + tunjanganTransportasi;
-         pajak = misc * 0.025;
-         double Total = misc - pajak;
+         double subtotal= gajiPokok + tunjanganTransportasi;
+         pajak = subtotal * 0.025;
+         double Total = subtotal - pajak;
          return Total;
 }
 
     Karyawan( String nama, int gajiPokok) {
-        this.nik = currentNIK;
         currentNIK++;
+        this.nik = currentNIK;
         this.nama = nama;
         this.gajiPokok = gajiPokok;
 
