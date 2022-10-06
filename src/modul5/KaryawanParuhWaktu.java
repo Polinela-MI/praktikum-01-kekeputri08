@@ -13,16 +13,16 @@ public class KaryawanParuhWaktu extends Karyawan {
         double gajiMingguan;
         gajiMingguan= getgajiPokok()*20;
         tunjanganTransportasi=gajiMingguan*0.5;
-        misc=gajiMingguan+tunjanganTransportasi;
+        double subtotal=gajiMingguan+tunjanganTransportasi;
         if(jamKerja>20){
             double lembur =(jamKerja-20)*(getgajiPokok()+2000);
-            misc=misc+lembur;
+            subtotal=subtotal+lembur;
         }else if(jamKerja<20){
-            double penalti=(20-jamKerja)*getgajiPokok();
-            misc=misc-penalti;
+            double misc=(20-jamKerja)*getgajiPokok();
+            subtotal=subtotal-misc;
         }
-        pajak = misc+0.025;
-        double total = misc-pajak;
+        pajak = subtotal+0.025;
+        double total = subtotal-pajak;
         return total;
     }
 
