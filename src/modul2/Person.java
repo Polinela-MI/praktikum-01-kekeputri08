@@ -10,7 +10,7 @@ public class Person {
 
     //overloading constructor  //memiliki parameter / argumen
    	public Person(String n){
-    		this.nama = nama;
+            this.nama = nama;
    	}
 
        //mutator/setter method
