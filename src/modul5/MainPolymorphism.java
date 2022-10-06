@@ -1,4 +1,4 @@
-package modul5;
+package modul4.modul5;
 
 class A {
     int a = 1;
