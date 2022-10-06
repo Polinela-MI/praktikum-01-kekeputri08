@@ -1,4 +1,4 @@
-package modul4.modul5;
+package modul5;
 
 
 
@@ -14,13 +14,13 @@ public class Manajer extends Karyawan {
         double gajiMingguan;
         gajiMingguan= getgajiPokok()*20;
         tunjanganTransportasi=gajiMingguan*0.5;
-        misc=gajiMingguan+tunjanganTransportasi;
+        double subtotal=gajiMingguan+tunjanganTransportasi;
         if(Kinerja>50){
-            double bonus = gajiMingguan*(Kinerja/100);
-            misc=misc+bonus;
+            double misc = gajiMingguan*(Kinerja/100);
+            subtotal=subtotal+misc;
         }
-        double pajak =misc*0.025;
-        double total =misc-pajak;
+        double pajak =subtotal*0.025;
+        double total =subtotal-pajak;
         return total;
     }
 
