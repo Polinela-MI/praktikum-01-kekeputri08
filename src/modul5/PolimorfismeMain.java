@@ -2,7 +2,7 @@ package modul5;
 
 public class PolimorfismeMain {
     public static void cetakSlipGaji(Karyawan karyawan{
-        
+
         double Total = karyawan.hitungGaji();
         double subtotal = Total - karyawan.getPajak();
 
