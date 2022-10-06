@@ -19,21 +19,21 @@ class Karyawan {
         this.gajiPokok = gajiPokok;
     }
     //sett
-    public void setnik(int nik){
+    public void setNik(int nik){
         this.nik = nik;
     }
-    public void setnama (String nama){
+    public void setNama (String nama){
         this.nama = nama;
     }
-    public void setgajiPokok(int gajiPokok){
+    public void setGajiPokok(int gajiPokok){
         this.gajiPokok = gajiPokok;
     }
 
     //gett
-    public int getnik() {
+    public int getNik() {
         return nik;
     }
-    public String getnama() {
+    public String getNama() {
         return nama;
     }
     public int getgajiPokok() {
